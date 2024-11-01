@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+   }
+   
+   .calculator {
+    background-image: url(./fon-cats.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: auto;
+   }
+   
+   .display {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    height: 20px;
+   }
+   
+   .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+   }
+   
+   .button {
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+   }
+   
+   .operator,.clear  {
+    background-color: #dbbdec; /* Цвет операторов */
+   }
+
+   
+   .number {
+    background-color: #eee; /* Цвет цифр */
+   }
+   
+   .operator:hover,
+   .number:hover,
+   .clear:hover {
+    background-color: #cc6c6c;
+    cursor: pointer;
+   }
+   
+   .button:active {
+    transform: scale(0.98);
+   }
+   
